@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>javascript学习（day 1） | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="学习时间：2h 初识js：如何使用变量？答：var a = xxx   这里的 = 是赋值运算符    规范:习惯将 = 的两侧 各加上一个 空格。 什么是关键字？答：被JavaScript语言赋予了特殊含义的单词，在开发工具中，关键字会显示特殊的颜色。 什么是标识符：答：编程时起的名字，例如 var  num   这里面的num就是一个标识符。 标识符命名规则(必须遵守)只能由26个英文字母的大">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript学习（day 1）">
+<meta property="og:url" content="http://yoursite.com/2018/05/20/javascript-day01/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="学习时间：2h 初识js：如何使用变量？答：var a = xxx   这里的 = 是赋值运算符    规范:习惯将 = 的两侧 各加上一个 空格。 什么是关键字？答：被JavaScript语言赋予了特殊含义的单词，在开发工具中，关键字会显示特殊的颜色。 什么是标识符：答：编程时起的名字，例如 var  num   这里面的num就是一个标识符。 标识符命名规则(必须遵守)只能由26个英文字母的大">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-06T11:24:16.628Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript学习（day 1）">
+<meta name="twitter:description" content="学习时间：2h 初识js：如何使用变量？答：var a = xxx   这里的 = 是赋值运算符    规范:习惯将 = 的两侧 各加上一个 空格。 什么是关键字？答：被JavaScript语言赋予了特殊含义的单词，在开发工具中，关键字会显示特殊的颜色。 什么是标识符：答：编程时起的名字，例如 var  num   这里面的num就是一个标识符。 标识符命名规则(必须遵守)只能由26个英文字母的大">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript-day01" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/20/javascript-day01/" class="article-date">
+  <time datetime="2018-05-20T12:51:58.000Z" itemprop="datePublished">2018-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript学习（day 1）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>学习时间：2h</p>
+<h1 id="初识js："><a href="#初识js：" class="headerlink" title="初识js："></a>初识js：</h1><h4 id="如何使用变量？"><a href="#如何使用变量？" class="headerlink" title="如何使用变量？"></a>如何使用变量？</h4><p>答：var a = xxx   这里的 = 是赋值运算符    规范:习惯将 = 的两侧 各加上一个 空格。</p>
+<h4 id="什么是关键字？"><a href="#什么是关键字？" class="headerlink" title="什么是关键字？"></a>什么是关键字？</h4><p>答：被JavaScript语言赋予了特殊含义的单词，在开发工具中，关键字会显示特殊的颜色。</p>
+<h4 id="什么是标识符："><a href="#什么是标识符：" class="headerlink" title="什么是标识符："></a>什么是标识符：</h4><p>答：编程时起的名字，例如 var  num   这里面的num就是一个标识符。</p>
+<h4 id="标识符命名规则-必须遵守"><a href="#标识符命名规则-必须遵守" class="headerlink" title="标识符命名规则(必须遵守)"></a>标识符命名规则(必须遵守)</h4><p>只能由26个英文字母的大小写、10个阿拉伯数字0~9、下划线_、美元符号$组成<br>不能以数字开头<br>严格区分大小写，比如test和Test是2个不同的标识符<br>不可以使用关键字、保留字作为标识符<br>JS底层保存标识符时实际上是采用的Unicode编码，所以理论上讲，所有的utf-8中含有的内容都可以作为标识符<br>标识符命名规范(建议遵守)<br>变量的名称要有意义(有利于提高阅读性)<br>变量的命名遵守驼峰命名法，首字母小写,第二个单词的首字母大     例如：useName，myFunction</p>
+<h4 id="在页面中显示内容："><a href="#在页面中显示内容：" class="headerlink" title="在页面中显示内容："></a>在页面中显示内容：</h4><p>document.write(“hello<br>world2”);</p>
+<h4 id="在控制台中显示内容："><a href="#在控制台中显示内容：" class="headerlink" title="在控制台中显示内容："></a>在控制台中显示内容：</h4><p>console.log(“hello world3”); console.error(“错误信息”); console.warn(“警告信息”);</p>
+<p>innerHTML与value的区别：<br>innerHTML是标签中的html，value则是一个值。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/20/javascript-day01/" data-id="cji31k7uh0001bkvktvvaoy66" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/05/22/javascript-day02/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          javascript day02
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/22/javascript-day02/">javascript day02</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/20/javascript-day01/">javascript学习（day 1）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
