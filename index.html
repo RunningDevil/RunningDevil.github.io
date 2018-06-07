@@ -62,6 +62,100 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-javascript-day03" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/25/javascript-day03/" class="article-date">
+  <time datetime="2018-05-25T01:57:49.000Z" itemprop="datePublished">2018-05-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/25/javascript-day03/">javascript-day03</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="学习时间：2h"><a href="#学习时间：2h" class="headerlink" title="学习时间：2h"></a>学习时间：2h</h4><h4 id="学习内容：主要是js引用类型"><a href="#学习内容：主要是js引用类型" class="headerlink" title="学习内容：主要是js引用类型"></a>学习内容：主要是js引用类型</h4><h3 id="ECMAScript引用类型"><a href="#ECMAScript引用类型" class="headerlink" title="ECMAScript引用类型"></a>ECMAScript引用类型</h3><p>引用类型是一种数据结构，用于将数据和功能组织在一起，它也常被称为类（class），引用类型有时也被称为对象定义，因为它们描述的是一类对象所具有的属性和方法。</p>
+<h3 id="Object类型"><a href="#Object类型" class="headerlink" title="Object类型"></a>Object类型</h3><p>创建方法有两种：</p>
+<pre><code>new操作符后跟Object构造
+</code></pre><p>var person = new Object();</p>
+<p>//如果不给构造函数传递参数可以不加括号 var person = new Object;</p>
+<p>person.name = ‘bai’;</p>
+<p>person.age = 29;</p>
+<p>   使用对象字面量</p>
+<p>var person = {</p>
+<p>name : ‘bai’,</p>
+<p>age : 29,</p>
+<p>5 : true};</p>
+<h3 id="设置对象："><a href="#设置对象：" class="headerlink" title="设置对象："></a>设置对象：</h3><p>有两种访问对象属性的方法，可以用点表示法或中括号表示法获取、设置或更新对象的属性：</p>
+<p>person.白或person[‘白’]</p>
+<p>删除对象：<br>格式：delete person.白</p>
+<p>elete只能删除对象下的数据，其他5种基础类型的值是删除不掉的</p>
+<h4 id="对象嵌套："><a href="#对象嵌套：" class="headerlink" title="对象嵌套："></a>对象嵌套：</h4><p>var student = {</p>
+<p>name : {</p>
+<p>a : 1,</p>
+<p>b : 2</p>
+<p>},</p>
+<p>sex : 1,</p>
+<p>age : 26</p>
+<p>}</p>
+<p>取值只能一层一层取，如student.name.chinese，而不能跨过name，直接用student.chinese</p>
+<h3 id="Array对象："><a href="#Array对象：" class="headerlink" title="Array对象："></a>Array对象：</h3><p>命名格式：</p>
+<p>1、var mycars=new Array(“Saab”,”Volvo”,”BMW”)</p>
+<p>2、var mycars=new Array(3)<br>mycars[0]=”Saab”<br>mycars[1]=”Volvo”<br>mycars[2]=”BMW”<br>括号里面的‘3’可以省略</p>
+<h3 id="String对象："><a href="#String对象：" class="headerlink" title="String对象："></a>String对象：</h3><p>使用String对象的长度属性来计算字符串的长度：</p>
+<p>var txt=”Hello world!”<br>document.write(txt.length)</p>
+<p>字符串对象的toUpperCase()方法将字符串转换为大写：</p>
+<p>var txt=”Hello world!”<br>document.write(txt.toUpperCase())</p>
+<h4 id="日期对象："><a href="#日期对象：" class="headerlink" title="日期对象："></a>日期对象：</h4><p>使用 Date() 方法获得当日的日期</p>
+<p>如何使用 setFullYear() 设置具体的日期。</p>
+<p>详情见w3cschool：<a href="http://www.w3school.com.cn/js/js_obj_date.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_obj_date.asp</a></p>
+<h3 id="Boolean（逻辑）对象："><a href="#Boolean（逻辑）对象：" class="headerlink" title="Boolean（逻辑）对象："></a>Boolean（逻辑）对象：</h3><p>格式：var myBoolean=new Boolean()<br>下面的所有的代码行均会创建初始值为 false 的 Boolean 对象。<br>var myBoolean=new Boolean();<br>var myBoolean=new Boolean(0);<br>var myBoolean=new Boolean(null);<br>var myBoolean=new Boolean(“”);<br>var myBoolean=new Boolean(false);<br>var myBoolean=new Boolean(NaN);</p>
+<h2 id="各种方法："><a href="#各种方法：" class="headerlink" title="各种方法："></a>各种方法：</h2><ul>
+<li><p>数组检测：Array.isArray（）</p>
+</li>
+<li><p>tostring和valueof的区别：</p>
+</li>
+<li><p>valueOf()：返回最适合该对象类型的原始值；</p>
+</li>
+<li>toString(): 将该对象的原始值以字符串形式返回。</li>
+</ul>
+<h4 id="栈方法："><a href="#栈方法：" class="headerlink" title="栈方法："></a>栈方法：</h4><ul>
+<li><p>push（）：接收任意参数，逐个添加到数组末尾，然后返回数组长度</p>
+</li>
+<li><p>pop（）：从数组末尾移除最后一项，减小数组的length值，然后返回移除的项</p>
+</li>
+</ul>
+<p>队列方法：shift（）和unshift（）方法。</p>
+<p>重排序方法：reverse（）和sort（）；前者反转数组顺序，后者按升序排列，但是比较的是字符串。</p>
+<p>后者要实现对数值大小的排序，则需要使用一个排序函数</p>
+<p>操作方法：</p>
+<p>contat()            splice()方法狠强大。详情见<a href="http://www.w3school.com.cn/jsref/jsref_splice.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/jsref/jsref_splice.asp</a></p>
+<p>迭代方法：</p>
+<p>归并方法：</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/25/javascript-day03/" data-id="cji3wewnf0001k4vk9m31xy0s" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-javascript-day02" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/05/22/javascript-day02/" class="article-date">
@@ -149,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/22/javascript-day02/" data-id="cji31k7uc0000bkvk03kfqcni" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/22/javascript-day02/" data-id="cji3wewno0002k4vkj8leksbc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -193,7 +287,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/20/javascript-day01/" data-id="cji31k7uh0001bkvktvvaoy66" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/20/javascript-day01/" data-id="cji3wewn00000k4vkmdh17hde" class="article-share-link">Share</a>
       
       
     </footer>
@@ -232,6 +326,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/05/25/javascript-day03/">javascript-day03</a>
+          </li>
         
           <li>
             <a href="/2018/05/22/javascript-day02/">javascript day02</a>
